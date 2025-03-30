@@ -8,11 +8,12 @@ namespace Enhanced_Divinities;
 
 public class LevelUpMinions : MonoBehaviour
 {
-    private MinionManager _minionManager;
-    private DivinitiesManager _divinitiesManager;
-    private Divinity _divinity;
+    // private MinionManager _minionManager;
+    // private DivinitiesManager _divinitiesManager;
+    // private Divinity _divinity;
     private Minions _minions;
 
+    // I was unable to get MinionsManager or DivinitiesManager GameObject, this file is useless.
     public void Awake()
     {
         // var divinitiesManager = GameObject.Find("Divinities Manager/Instance");
@@ -22,7 +23,7 @@ public class LevelUpMinions : MonoBehaviour
     public void Start()
     {
         Plugin.Logger.Msg("LevelUpMinions component initialized!");
-        Plugin.Logger.Msg("Please delete these logs to keep the console clean!");
+        // Plugin.Logger.Msg("Please delete these logs to keep the console clean!");
     }
     private void Update()
     {
