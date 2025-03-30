@@ -10,16 +10,6 @@ namespace Enhanced_Divinities;
 
 public class Enhanced_Divinities : MonoBehaviour
 {
-    private DivinitiesManager _divinitiesManager;
-    private ChestHuntManager _chestHuntManager;
-
-    private void Awake()
-    {
-        _divinitiesManager = gameObject.GetComponentInChildren<DivinitiesManager>();
-        _chestHuntManager = gameObject.GetComponentInChildren<ChestHuntManager>();
-
-    }
-
     [HarmonyPatch(typeof(DivinitiesManager), "PrestigeMinion")]
     public class Patch_PrestigeMinion
     {
